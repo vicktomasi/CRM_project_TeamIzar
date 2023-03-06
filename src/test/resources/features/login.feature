@@ -6,8 +6,8 @@ Feature: Users should be able to login
 
 @wip
   Scenario: Verify login with different user types
-    Given the user logged in as "<userType>"
-    Given the user logged in with username as "User1" and password as "UserUser123"
+  When the user logged in as "hr"
+  #When the user logged in with username as "xxx" and password as "sddsds"
 
 
 

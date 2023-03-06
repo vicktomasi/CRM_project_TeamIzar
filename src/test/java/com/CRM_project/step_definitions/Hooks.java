@@ -1,11 +1,11 @@
-package com.project_name.step_definitions;
+package com.CRM_project.step_definitions;
 
 
 
 
-import com.project_name.utilities.BrowserUtils;
-import com.project_name.utilities.ConfigurationReader;
-import com.project_name.utilities.Driver;
+import com.CRM_project.utilities.BrowserUtils;
+import com.CRM_project.utilities.ConfigurationReader;
+import com.CRM_project.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
