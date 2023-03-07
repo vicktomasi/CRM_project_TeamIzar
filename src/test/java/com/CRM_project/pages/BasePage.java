@@ -20,6 +20,10 @@ import java.util.List;
 
 public abstract class BasePage {
 
+    public BasePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
     @FindBy(xpath = "//span[.='Log out']")
     public WebElement logoutButton;
 
