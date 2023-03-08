@@ -1,8 +1,6 @@
 package com.CRM_project.step_definitions;
 
 
-
-
 import com.CRM_project.utilities.BrowserUtils;
 import com.CRM_project.utilities.ConfigurationReader;
 import com.CRM_project.utilities.Driver;
@@ -29,9 +27,10 @@ public class Hooks {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
-    //@Before (value = "@login", order = 2 )
+  //  @ Before (value = "@login", order = 2 )
     public void login_scenario_before(){
         System.out.println("---> @Before: RUNNING BEFORE EACH SCENARIO");
+
     }
 
     /*

@@ -56,9 +56,9 @@ public class LoginPage  {
 
     public void login(String userNameStr, String passwordStr) {
         username.sendKeys(userNameStr);
-        BrowserUtils.sleep(5);
+        BrowserUtils.sleep(2);
         password.sendKeys(passwordStr);
-        BrowserUtils.sleep(5);
+        BrowserUtils.sleep(2);
 
         loginButton.click();
         // verification that we logged
