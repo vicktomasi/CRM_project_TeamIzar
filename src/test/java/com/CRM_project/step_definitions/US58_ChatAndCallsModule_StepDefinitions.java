@@ -41,7 +41,6 @@ public class US58_ChatAndCallsModule_StepDefinitions {
 
         System.out.println("listOfOptions = " + listOfOptions);
 
-
     }
 
 
