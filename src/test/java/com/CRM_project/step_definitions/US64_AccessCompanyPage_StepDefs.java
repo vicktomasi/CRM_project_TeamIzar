@@ -44,13 +44,9 @@ public class US64_AccessCompanyPage_StepDefs {
     @Then("verify users see the the users see flowing seven options:")
     public void verifyUsersSeeTheTheUsersSeeFlowingSevenOptions(List<String> expectedOptions) {
 
-        Assert.assertTrue(companyPage.officialInformationLink.isDisplayed());
-        Assert.assertTrue(companyPage.ourLifeLink.isDisplayed());
-        Assert.assertTrue(companyPage.aboutCompanyLink.isDisplayed());
-        Assert.assertTrue(companyPage.photoGalleryLink.isDisplayed());
-        Assert.assertTrue(companyPage.videoLink.isDisplayed());
-        Assert.assertTrue(companyPage.careerLink.isDisplayed());
-        Assert.assertTrue(companyPage.businessNewsLink.isDisplayed());
+        for (WebElement each : companyPage.companyPageModuleOptions) {
+            Assert.assertTrue(each.isDisplayed());
+        }
 
     }
 }

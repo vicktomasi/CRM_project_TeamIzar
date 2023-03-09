@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class CompanyPage {
 
     public CompanyPage() {
@@ -15,7 +17,7 @@ public class CompanyPage {
     public WebElement companyPageModule;
 
     @FindBy(xpath = "//div[@class='main-buttons-inner-container']/..")
-    public WebElement companyPageModuleOptions;
+    public List<WebElement> companyPageModuleOptions;
 
     @FindBy(xpath = "//span[.='Official Information']/../..")
     public WebElement officialInformationLink;
