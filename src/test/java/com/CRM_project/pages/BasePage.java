@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public abstract class BasePage {
 
-
     @FindBy(xpath = "//span[.='Log out']")
     public WebElement logoutButton;
 
