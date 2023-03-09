@@ -1,4 +1,4 @@
-@wip
+ @wip
 Feature: User accesses the Drive page
 
   Scenario:Users should be able to see all modules in the Drive page
