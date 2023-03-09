@@ -2,6 +2,7 @@ package com.CRM_project.step_definitions;
 
 import com.CRM_project.pages.BasePage;
 import com.CRM_project.pages.LoginPage;
+import com.CRM_project.pages.ProfileNamePage;
 import com.CRM_project.utilities.BrowserUtils;
 import com.CRM_project.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -9,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-public class US54_Logout_StepDefs extends BasePage {
+public class US54_Logout_StepDefs {
 
     LoginPage loginPage = new LoginPage();
 
@@ -18,9 +19,11 @@ public class US54_Logout_StepDefs extends BasePage {
         loginPage.the_user_logged_in_as("hr");
     }
 
+    ProfileNamePage profileNamePage = new ProfileNamePage();
+
     @When("users click the user profile name")
     public void users_click_the_user_profile_name() {
-        loginPage.profileButton.click();
+       profileNamePage.profileButton.click();
     }
 
     @When("users select the {string} option")
