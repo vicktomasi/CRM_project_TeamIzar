@@ -2,6 +2,7 @@ package com.CRM_project.step_definitions;
 
 import com.CRM_project.pages.BasePage;
 import com.CRM_project.pages.DrivePageAccessPage;
+import com.CRM_project.pages.LoginPage;
 import com.CRM_project.utilities.BrowserUtils;
 import com.CRM_project.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -13,12 +14,12 @@ import java.util.List;
 
 public class DrivePageAccessStepDefinitions  {
  DrivePageAccessPage drivePageAccessPage=new DrivePageAccessPage();
-LoginStepDefs loginStepDefs=new LoginStepDefs();
+LoginPage loginPage=new LoginPage();
     @Given("the user is on the home page")
     public void the_user_is_on_the_home_page() {
         BrowserUtils.sleep(3);
 
-       loginStepDefs.the_user_logged_in_as("hr");
+       loginPage.the_user_logged_in_as("hr");
 
 
     }
