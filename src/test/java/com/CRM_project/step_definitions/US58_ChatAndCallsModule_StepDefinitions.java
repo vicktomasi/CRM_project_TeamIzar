@@ -16,7 +16,6 @@ import java.util.List;
 public class US58_ChatAndCallsModule_StepDefinitions {
 
    ChatAndCallsPage chatAndCallsPage = new ChatAndCallsPage();
-
     LoginPage loginPage = new LoginPage();
 
     @Given("users are on the homepage")
