@@ -24,10 +24,10 @@ public class DrivePageAccessPage {
     @FindBy(xpath = "//span[.='Sales and Marketing']")
     public  WebElement salesAndMarketing;
 
-    @FindBy(xpath = "//*[@id='top_menu_id_docs_3526888156']/a/span[2]/span[2]")
+     @FindBy(xpath = "//*[@id='top_menu_id_docs_3526888156']/a/span[2]/span[2]")
     public  WebElement topManagementAndDoc;
 
-    @FindBy(xpath = "//*[@id='top_menu_id_docs_menu_my_disk_volume']/a/span[2]/span[2]")
+     @FindBy(xpath = "//*[@id='top_menu_id_docs_menu_my_disk_volume']/a/span[2]/span[2]")
     public  WebElement driveCleanup;
 
 }
