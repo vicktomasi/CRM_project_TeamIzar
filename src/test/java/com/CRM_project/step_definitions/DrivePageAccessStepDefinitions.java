@@ -12,7 +12,7 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class DrivePageAccessStepDefinitions  {
+public class DrivePageAccessStepDefinitions {
  DrivePageAccessPage drivePageAccessPage=new DrivePageAccessPage();
 LoginPage loginPage=new LoginPage();
     @Given("the user is on the home page")
