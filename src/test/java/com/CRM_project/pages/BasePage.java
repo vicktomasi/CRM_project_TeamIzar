@@ -5,15 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public abstract class BasePage {
 
-
-    public BasePage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
-
-    public BasePage() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
-
     @FindBy(xpath = "//span[.='Log out']")
     public WebElement logoutButton;
 
