@@ -1,33 +1,31 @@
 package com.CRM_project.step_definitions;
 
-import com.CRM_project.pages.BasePage;
 import com.CRM_project.pages.Homepage;
 import com.CRM_project.pages.LoginPage;
 import com.CRM_project.utilities.BrowserUtils;
-import com.CRM_project.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class US62_accessTheEmpoyeesPage {
+public class US62_accessTheEmpoyees_StepDefs {
 
 
         LoginPage loginPage = new LoginPage();
         Homepage Homepage = new Homepage();
 
-
+/*
         @Given("users are on the homepage")
         public void users_are_on_the_homepage() {
             loginPage.the_user_logged_in_as("hr");
 
         }
-        @When("users click the Employees modul")
-        public void users_click_the_employees_modul() {
+
+ */
+        @When("users click the Employees module")
+        public void users_click_the_employees_module() {
                 Homepage.employees.click();
 
 
