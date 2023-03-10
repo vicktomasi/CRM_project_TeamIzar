@@ -14,10 +14,13 @@ public class US54_Logout_StepDefs {
 
     LoginPage loginPage = new LoginPage();
 
+    /*
     @Given("the users are on the homepage")
     public void the_users_are_on_the_homepage() {
         loginPage.the_user_logged_in_as("hr");
     }
+
+     */
 
     ProfileNamePage profileNamePage = new ProfileNamePage();
 
