@@ -3,7 +3,6 @@ package com.CRM_project.step_definitions;
 import com.CRM_project.pages.ChatAndCallsPage;
 import com.CRM_project.pages.LoginPage;
 import com.CRM_project.utilities.BrowserUtils;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -14,10 +13,10 @@ public class US58_ChatAndCallsModule_StepDefinitions {
    ChatAndCallsPage chatAndCallsPage = new ChatAndCallsPage();
     LoginPage loginPage = new LoginPage();
 
-    @Given("users are on the homepage")
-    public void users_are_on_the_homepage() {
-        loginPage.the_user_logged_in_as("hr");
-    }
+    //@Given("users are on the homepage")
+   //public void users_are_on_the_homepage() {
+     //   loginPage.the_user_logged_in_as("hr");
+  //  }
 
     @When("users click the Chat and Calls module")
     public void users_click_the_chat_and_calls_module() {
