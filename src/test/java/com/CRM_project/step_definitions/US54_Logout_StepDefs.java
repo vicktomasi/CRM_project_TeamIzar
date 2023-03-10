@@ -29,8 +29,8 @@ public class US54_Logout_StepDefs {
        profileNamePage.profileButton.click();
     }
 
-    @When("users select the {string} option")
-    public void users_select_the_option(String string) {
+    @When("users select the Log Out option")
+    public void users_select_the_option() {
         loginPage.logoutButton.click();
     }
 
