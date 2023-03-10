@@ -11,7 +11,6 @@ public class ProfileNamePage extends BasePage{
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
     @FindBy(id = "user-name")
     public WebElement profileButton;
 

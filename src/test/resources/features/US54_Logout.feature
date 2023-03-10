@@ -4,6 +4,7 @@ Feature: CRM logout feature
     Given the user is on the login page
     When the user logged in as "hr"
 
+
   @wip
   Scenario: Verify the users log out from the app
     Given users click the profile name
