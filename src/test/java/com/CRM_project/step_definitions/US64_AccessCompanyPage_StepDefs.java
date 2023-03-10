@@ -23,7 +23,7 @@ public class US64_AccessCompanyPage_StepDefs {
 
     LoginPage loginPage = new LoginPage();
     CompanyPage companyPage = new CompanyPage();
-
+/*
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
         Driver.getDriver().get("https://login2.nextbasecrm.com/");
@@ -32,10 +32,14 @@ public class US64_AccessCompanyPage_StepDefs {
     public void the_user_logged_in_as(String userType) {
         loginPage.the_user_logged_in_as(userType);
     }
+
+
     @Given("users are on the homepage")
     public void users_are_on_the_homepage() {
         BrowserUtils.verifyTitle("Portal");
     }
+
+ */
     @When("users click the Company module")
     public void users_click_the_company_module() {
         companyPage.companyPageModule.click();
