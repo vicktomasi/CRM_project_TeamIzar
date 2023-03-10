@@ -1,5 +1,9 @@
 Feature: CRM user profile options feature
 
+  Background:  User is already in the log in page
+    Given the user is on the login page
+    When the user logged in as "hr"
+
   @wip
   Scenario:
     Given users are on the homepage

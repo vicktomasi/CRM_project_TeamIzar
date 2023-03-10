@@ -31,9 +31,12 @@ public class US54_Logout_StepDefs {
         loginPage.logoutButton.click();
     }
 
+
     @Then("verify the user back to the login page")
     public void verify_the_user_back_to_the_login_page() {
         BrowserUtils.verifyTitle("Authorization");
     }
+
+
 
 }

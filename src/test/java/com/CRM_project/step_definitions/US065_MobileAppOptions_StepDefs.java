@@ -12,10 +12,13 @@ public class US065_MobileAppOptions_StepDefs {
 
     LoginPage loginPage = new LoginPage();
 
+    /*
     @Given("user is on the homepage")
     public void user_is_on_the_homepage() {
         loginPage.the_user_logged_in_as("hr");
     }
+
+     */
 
     MobileAppOptionsPage mobileAppOptionsPage = new MobileAppOptionsPage();
 

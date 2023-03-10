@@ -14,16 +14,20 @@ public class US55_DesktopOption_StepDefs extends BasePage {
 
     DesktopOptionPage desktopOptionPage = new DesktopOptionPage();
 
+    /*
     @Given("users are on the homepage")
     public void users_are_on_the_homepage() {
-     loginPage.the_user_logged_in_as("hr");
+        loginPage.the_user_logged_in_as("hr");
 
 
     }
+
+     */
+
     @Then("verify the users see following three options:")
     public void verify_the_users_see_following_three_options(io.cucumber.datatable.DataTable dataTable) {
 
-        for (WebElement each : desktopOptionPage.desktopDownloadOptions){
+        for (WebElement each : desktopOptionPage.desktopDownloadOptions) {
             Assert.assertTrue(each.isDisplayed());
         }
 
