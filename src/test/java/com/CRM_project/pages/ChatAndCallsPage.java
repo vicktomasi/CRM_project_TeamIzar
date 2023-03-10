@@ -13,7 +13,6 @@ public class ChatAndCallsPage {
    }
 
 
-
     @FindBy(xpath = "//a[@title='Chat and Calls']")
     public WebElement chatAndCallLink;
 

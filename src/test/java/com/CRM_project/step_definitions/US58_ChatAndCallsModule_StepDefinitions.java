@@ -9,10 +9,6 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 import java.util.List;
-// I haven't extended the BasePage for practice purposes.
-// If anyone wants to extend the BasePage, then there is no need to create a separated page
-// and then its object in your SteDefs
-// Because you can directly access the WebElements that we already located in the BasePage
 public class US58_ChatAndCallsModule_StepDefinitions {
 
    ChatAndCallsPage chatAndCallsPage = new ChatAndCallsPage();
@@ -30,7 +26,7 @@ public class US58_ChatAndCallsModule_StepDefinitions {
     }
 
     @Then("verify users see following four options:")
-    public void verifyUsersSeeFollowingFourOptions(List<String> listOfOptions) {
+    public void verifyUsersSeeFollowingFourOptions(List<String> fourOptions) {
 
         Assert.assertTrue(chatAndCallsPage.messageLink.isDisplayed());
         BrowserUtils.sleep(3);
@@ -39,19 +35,26 @@ public class US58_ChatAndCallsModule_StepDefinitions {
         Assert.assertTrue(chatAndCallsPage.activityStreamLink.isDisplayed());
         BrowserUtils.sleep(3);
 
-        System.out.println("listOfOptions = " + listOfOptions);
+        System.out.println("fourOptions = " + fourOptions);
 
     }
 
 
+/*
+    @Then("verify users see following {string} options: {string}")
+    public void verifyUsersSeeFollowingOptions(String four, String options) {
+        Assert.assertTrue(chatAndCallsPage.messageLink.isDisplayed());
+        BrowserUtils.sleep(3);
+        Assert.assertTrue(chatAndCallsPage.notificationLink.isDisplayed());
+        Assert.assertTrue(chatAndCallsPage.settingsLink.isDisplayed());
+        Assert.assertTrue(chatAndCallsPage.activityStreamLink.isDisplayed());
+        BrowserUtils.sleep(3);
 
+        System.out.println("These are the "+four+" options: "+options);
 
+    }
 
-
-
-
-
-
+ */
 
 }
 
